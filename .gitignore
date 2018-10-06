@@ -1,0 +1,11 @@
+bin
+Release
+Debug
+*.DS_Store
+*.user
+*.iml
+.gradle
+.idea
+.git
+build
+local.properties
