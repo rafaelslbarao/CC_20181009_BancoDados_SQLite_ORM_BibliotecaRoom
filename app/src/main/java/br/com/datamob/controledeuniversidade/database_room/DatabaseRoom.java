@@ -23,7 +23,7 @@ public abstract class DatabaseRoom extends RoomDatabase
 
     private static DatabaseRoom instance;
 
-    public static DatabaseRoom getInstance(Context context)
+    public synchronized static DatabaseRoom getInstance(Context context)
     {
         if(instance == null)
             instance = Room.databaseBuilder(context, DatabaseRoom.class, DATABASE_NAME).build();
